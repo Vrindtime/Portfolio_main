@@ -62,14 +62,14 @@ a {
     height: 200vh;
 }
 
-@media (max-width : 992px) {
-    .sticky {
+@media (max-width < 992px) {
+    .container .sticky {
         height: 30vh !important;
-        top: 1;
+        top: 1 !important;
         position: relative !important;
     }
 
-    .links {
+    .container .nav-menu {
         display: none !important;
         position: absolute !important;
     }
@@ -97,4 +97,13 @@ a {
 .nav-menu a.active::before {
   width: 16px;
   background-color: var(--primary);
+}
+
+@media (max-width: 992px) {
+    .sticky {
+        height: 30vh !important;
+        top: 1px !important;
+        position: relative !important;
+    }
+
 }
