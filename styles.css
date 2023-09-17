@@ -3,7 +3,8 @@
     --background: #0b1018;
     --primary: #195DE9;
     --secondary: #182234;
-    --accent: #627eb7;
+    --accent: #6f92da;
+    background-color: var(--background);
 }
 
 * {
@@ -11,48 +12,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body::-webkit-scrollbar {
-    width: .2em;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
-    /* outline: 1px solid var(--primary); */
-    border-radius: 15px;
+    color: var(--text);
 }
 
 body {
-    background-color: var(--background);
-    height: 200vh;
+    background-color: var(--background) !important;
     display: grid;
     place-content: center;
     cursor: none;
 }
 
-.cursor {
-    position: fixed;
-    display: none;
-    /*so it dosent start from the center every time the page loads */
-    z-index: 1000;
-    background-color: var(--accent);
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(97, 126, 183, 0.8), 0 0 30px rgba(194, 206, 231, 0.6), 0 0 50px 10px rgba(221, 224, 231, 0.4);
 
-    pointer-events: none;
-    transform: translate(-50%, -50%);
+a {
+    cursor: none;
+    text-decoration: none !important;
+    color: var(--text) !important;
 }
 
-.cursor:before {
+.container>.intro>h3 {
+    color: var(--secondary);
+}
+
+.container {
+    width: 100vw !important;
+}
+
+.sticky {
+    height: 100dvh;
+    top: 0;
+    position: sticky;
+}
+
+.text {
+    color: var(--text) !important;
+}
+
+.h100 {
+    height: 100vh;
+}
+
+.mybtn {
+    background-color: var(--primary);
+    border-radius: 25px;
+    padding: 2% 15%;
+    text-decoration: none;
+}
+
+.h200 {
+    height: 200vh;
+}
+
+@media (max-width : 992px) {
+    .sticky {
+        height: 30vh !important;
+        top: 1;
+        position: relative !important;
+    }
+
+    .links {
+        display: none !important;
+        position: absolute !important;
+    }
+}
+
+/* Style for the navigation menu */
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the horizontal line (indicator) */
+.nav-menu a::before {
     content: "";
-    position: absolute;
-    background-color: var(--background);
-    width: 50px;
-    height: 50px;
-    opacity: 0.2;
-    transform: translate(-30%, -30%);
-    border-radius: 50%;
+    width: 8px;
+    height: 2px;
+    background-color: #f8f7f7;
+    margin-right: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Hover effect for the line */
+.nav-menu a:hover::before,
+.nav-menu a.active::before {
+  width: 16px;
+  background-color: var(--primary);
 }
