@@ -1,15 +1,27 @@
 const cursor = document.querySelector(".cursor");
-//cursor effect on movement
-document.addEventListener("mousemove" , (e)=>{
-    let x = e.pageX;
-    let y = e.pageY;
 
+// Function to update the cursor position
+function updateCursorPosition(x, y) {
     cursor.style.top = y + "px";
     cursor.style.left = x + "px";
-    cursor.style.display = "block"; // so it displays back when the cursor is back on the page
+}
+
+// Update cursor position on mousemove
+document.addEventListener("mousemove", (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    updateCursorPosition(x, y);
+    cursor.style.display = "block"; // Display the cursor
 });
 
-// cursor effect on mouse out
-document.addEventListener("mouseout",() => {
+// Update cursor position on scroll
+document.addEventListener("scroll", () => {
+    let x = event.clientX;
+    let y = event.clientY + window.scrollY;
+    updateCursorPosition(x, y);
+});
+
+// Hide cursor on mouseout
+document.addEventListener("mouseout", () => {
     cursor.style.display = "none";
 });
