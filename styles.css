@@ -17,8 +17,6 @@
 
 body {
     background-color: var(--background) !important;
-    display: grid;
-    place-content: center;
     cursor: none;
 }
 
@@ -29,8 +27,8 @@ a {
     color: var(--text) !important;
 }
 
-.container>.intro>h3 {
-    color: var(--secondary);
+.intro>h3 {
+    color: var(--primary);
 }
 
 .container {
@@ -39,6 +37,7 @@ a {
 
 .sticky {
     height: 100dvh;
+    align-items: start;
     top: 0;
     position: sticky;
 }
@@ -62,18 +61,6 @@ a {
     height: 200vh;
 }
 
-@media (max-width < 992px) {
-    .container .sticky {
-        height: 30vh !important;
-        top: 1 !important;
-        position: relative !important;
-    }
-
-    .container .nav-menu {
-        display: none !important;
-        position: absolute !important;
-    }
-}
 
 /* Style for the navigation menu */
 
@@ -101,7 +88,7 @@ a {
 
 @media (max-width: 992px) {
     .sticky {
-        height: 30vh !important;
+        height: 50vh !important;
         top: 1px !important;
         position: relative !important;
     }
