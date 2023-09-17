@@ -57,10 +57,20 @@ a {
     text-decoration: none;
 }
 
+.mybtn:hover {
+    box-shadow: 0 0 15px 10px var(--secondary),
+        0 0 25px 20px var(--secondary);
+}
+
 .h200 {
     height: 200vh;
 }
 
+.links > .col-4 > a:hover {
+    box-shadow: 0 0 15px 10px var(--secondary),
+        0 0 25px 20px var(--secondary);
+
+}
 
 /* Style for the navigation menu */
 
@@ -82,8 +92,8 @@ a {
 /* Hover effect for the line */
 .nav-menu a:hover::before,
 .nav-menu a.active::before {
-  width: 16px;
-  background-color: var(--primary);
+    width: 16px;
+    background-color: var(--primary);
 }
 
 @media (max-width: 992px) {
