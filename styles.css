@@ -104,6 +104,9 @@ a {
 }
 
 @media (max-width: 992px) {
+    .intro{
+        padding: 2% !important;
+    }
     .sticky {
         max-height: 50vh !important;
         top: 1px !important;
