@@ -60,6 +60,7 @@ a {
     padding: 2% 15%;
     text-decoration: none;
     width: 75% !important;
+    margin-top: 0em;
 }
 
 .mybtn:hover {
@@ -77,8 +78,8 @@ a {
 .link a {
     display: flex;
     align-items: center;
-    margin: 3rem;
-    font-size: 1.6rem;
+    margin: .8em !important;
+    font-size: 1rem;
 }
 
 /* Style for the horizontal line (indicator) */
@@ -112,13 +113,19 @@ a {
 }
 
 
-@media (min-height : 600px) {
+@media (min-width: 1200px) and (min-height: 768px) {
     .link a {
-        margin: .8em !important;
-        font-size: 1rem;
+        margin: 3rem;
+        font-size: 1.6rem;
     }
 
     .p {
-        font-size: large;
+        font-size: larger;
+    }
+    .mybtn{
+        margin-top: 1em !important;
+    }
+    .links{
+        margin-top: 10em !important;
     }
 }
