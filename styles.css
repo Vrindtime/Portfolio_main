@@ -112,7 +112,7 @@ a {
 }
 
 
-@media (max-height : 615px) {
+@media (min-height : 600px) {
     .link a {
         margin: .8em !important;
         font-size: 1rem;
