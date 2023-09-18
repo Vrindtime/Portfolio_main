@@ -113,7 +113,9 @@ a {
         position: relative !important;
         padding: 2% !important;
     }
-
+    .mybtn{
+        margin-bottom: 2% !important;
+    }
 }
 
 
