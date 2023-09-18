@@ -108,8 +108,15 @@ a {
         max-height: 50vh !important;
         top: 1px !important;
         position: relative !important;
+        padding: 2% !important;
     }
 
+    .cursor{
+        display: none;
+    }
+    body{
+        cursor: pointer;
+    }
 }
 
 
@@ -119,6 +126,7 @@ a {
         font-size: 1.6rem;
     }
 
+    
     .p {
         font-size: larger;
     }
