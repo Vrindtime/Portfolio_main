@@ -111,12 +111,6 @@ a {
         padding: 2% !important;
     }
 
-    .cursor{
-        display: none;
-    }
-    body{
-        cursor: pointer;
-    }
 }
 
 
@@ -125,7 +119,6 @@ a {
         margin: 3rem;
         font-size: 1.6rem;
     }
-
     
     .p {
         font-size: larger;

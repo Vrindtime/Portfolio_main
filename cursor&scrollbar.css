@@ -35,3 +35,12 @@ body::-webkit-scrollbar-thumb {
     transform: translate(-12%, -12%);
     border-radius: 50%;
 }
+
+@media (max-width: 992px) {
+    .cursor{
+        display: none !important;
+    }
+    body{
+        cursor: pointer !important;
+    }
+}
