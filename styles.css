@@ -1,5 +1,6 @@
 :root {
-    --text: #e0e5f1;
+    --text: #bec3d1;
+    --maintext: #d4dcf5;
     --background: #0b1018;
     --primary: #195DE9;
     --secondary: #182234;
@@ -30,6 +31,7 @@ a {
 .intro>h1 {
     font-size: 3em;
     font-weight: 800;
+    color: var(--maintext);
 }
 
 .intro>h3 {
@@ -51,7 +53,7 @@ a {
 }
 
 .h100 {
-    height: 100vh;
+    min-height: 50vh;
 }
 
 .mybtn {
@@ -61,6 +63,8 @@ a {
     text-decoration: none;
     width: 75% !important;
     margin-top: 0em;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .mybtn:hover {
@@ -140,4 +144,20 @@ a {
     .links{
         margin-top: 10em !important;
     }
+}
+
+.mainsection{
+    text-align: justify;
+}
+.section h2{
+    color: var(--maintext) !important;
+    font-weight: 800;
+}
+.text-link{
+    color: white !important;
+    font-weight: 800;
+}
+
+.text-link:hover{
+    color: var(--primary) !important;
 }
