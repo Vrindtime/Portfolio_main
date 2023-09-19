@@ -53,7 +53,7 @@ a {
 }
 
 .h100 {
-    min-height: 50vh;
+    min-height: fit-content;
 }
 
 .mybtn {
