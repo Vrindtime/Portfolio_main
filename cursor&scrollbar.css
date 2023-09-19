@@ -1,5 +1,6 @@
 body::-webkit-scrollbar {
-    width: .2em;
+    width: .3em;
+    background-color: var(--secondary);
 }
 
 body::-webkit-scrollbar-thumb {
