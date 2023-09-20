@@ -131,6 +131,9 @@ a {
         margin-top: 4vh !important;
         padding: 2% !important;
     }
+    .h100{
+        height: fit-content;
+    }
 }
 
 
@@ -154,9 +157,7 @@ a {
     .links {
         margin-top: 5em !important;
     }
-    .h100{
-        height: fit-content;
-    }
+
 }
 
 .mainsection {
