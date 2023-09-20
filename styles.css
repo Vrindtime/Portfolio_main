@@ -119,15 +119,15 @@ a {
         max-height: 50vh !important;
         top: 1px !important;
         position: relative !important;
-        padding: 2% !important;
+        padding: 5% !important;
     }
 
     .mybtn {
-        margin-bottom: 3% !important;
+        margin-bottom: 5% !important;
     }
 
     .mainsection {
-        margin-top: 2vh !important;
+        margin-top: 8vh !important;
     }
 
     .section {
