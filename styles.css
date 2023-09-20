@@ -108,6 +108,9 @@ a {
 }
 
 @media (max-width: 992px) {
+    .row{
+        padding: 5% !important;
+    }
     .intro {
         padding: 3% !important;
     }
@@ -129,7 +132,7 @@ a {
 
     .section {
         margin-top: 4vh !important;
-        padding: 2% !important;
+        padding: 1% !important;
     }
     .h100{
         min-height: fit-content !important;
