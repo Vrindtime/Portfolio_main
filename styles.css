@@ -108,22 +108,26 @@ a {
 }
 
 @media (max-width: 992px) {
-    .intro{
+    .intro {
         padding: 3% !important;
     }
+
     .sticky {
         max-height: 50vh !important;
         top: 1px !important;
         position: relative !important;
         padding: 2% !important;
     }
-    .mybtn{
+
+    .mybtn {
         margin-bottom: 5% !important;
     }
-    .mainsection{
+
+    .mainsection {
         margin-top: 5vh !important;
     }
-    .section{
+
+    .section {
         margin-top: 4vh !important;
         padding: 2% !important;
     }
@@ -135,30 +139,73 @@ a {
         margin: 3rem;
         font-size: 1.6rem;
     }
-    
+
     .p {
         font-size: larger;
     }
-    .mybtn{
+
+    .mybtn {
         margin-top: 1em !important;
     }
-    .links{
+
+    .links {
         margin-top: 10em !important;
     }
 }
 
-.mainsection{
+.mainsection {
     text-align: justify;
+    /* border: 1px solid red; */
+    padding-top: 2rem;
 }
-.section h2{
+
+.section h2 {
     color: var(--maintext) !important;
-    font-weight: 800;
+    font-weight: 600;
 }
-.text-link{
+
+.section p {
+    padding-left: 2vw;
+}
+
+.section p::before {
+    content: "<h3>";
+    font-size: 14px;
+    bottom: 100px;
+    margin-left: -15px;
+}
+
+.section p::after {
+    content: "</h3>";
+    font-size: 14px;
+    margin-left: -15px;
+}
+
+.text-link {
     color: white !important;
     font-weight: 800;
 }
 
-.text-link:hover{
+.text-link:hover {
     color: var(--primary) !important;
+}
+
+b {
+    color: white !important;
+}
+
+.h100 {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.glass {
+    background: rgba(24, 65, 191, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid rgba(24, 65, 191, 1);
+    padding: 5%;
 }
