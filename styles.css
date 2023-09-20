@@ -134,12 +134,7 @@ a {
         margin-top: 4vh !important;
         padding: 1% !important;
     }
-    .h100{
-        min-height: fit-content !important;
-    }
-    .scroll-down{
-        /* display: none; */
-    }
+    
 }
 
 
