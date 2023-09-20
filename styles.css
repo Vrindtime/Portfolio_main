@@ -136,7 +136,7 @@ a {
 
 @media (min-width: 1200px) and (min-height: 768px) {
     .link a {
-        margin: 3rem;
+        margin: 2rem;
         font-size: 1.6rem;
     }
 
@@ -147,9 +147,12 @@ a {
     .mybtn {
         margin-top: 1em !important;
     }
+    .section p{
+        font-size: 1em !important;
+    }
 
     .links {
-        margin-top: 10em !important;
+        margin-top: 5em !important;
     }
 }
 
@@ -166,6 +169,7 @@ a {
 
 .section p {
     padding-left: 2vw;
+    font-size: 0.8rem;
 }
 
 .section p::before {
@@ -195,17 +199,62 @@ b {
 }
 
 .h100 {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     place-content: center;
 }
 
-.glass {
-    background: rgba(24, 65, 191, 0.32);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.5px);
-    -webkit-backdrop-filter: blur(2.5px);
-    border: 1px solid rgba(24, 65, 191, 1);
-    padding: 5%;
+.scroll{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid var(--accent);
+    position: absolute;
+    border-radius: 50px;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid var(--accent);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+    0% {
+        /* top:20%; */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+} 
