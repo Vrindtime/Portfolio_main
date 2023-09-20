@@ -132,7 +132,10 @@ a {
         padding: 2% !important;
     }
     .h100{
-        height: fit-content;
+        min-height: fit-content !important;
+    }
+    .scroll-down{
+        /* display: none; */
     }
 }
 
