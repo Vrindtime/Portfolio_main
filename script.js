@@ -27,19 +27,16 @@ document.addEventListener("mouseout", () => {
 });
 
 
-//for the current nav viewed
 // Get references to the links and sections
 const aboutLink = document.getElementById("about-link");
 const skillsLink = document.getElementById("skills-link");
 const experienceLink = document.getElementById("experience-link");
 const certLink = document.getElementById("cert-link");
-const contactLink = document.getElementById("contact-link");
 
 const aboutSection = document.getElementById("about");
 const skillsSection = document.getElementById("skills");
 const experienceSection = document.getElementById("experience");
 const certSection = document.getElementById("cert");
-const contactSection = document.getElementById("contact");
 
 // Function to add "active" class to the currently visible link
 function setActiveLink(link) {
@@ -48,7 +45,6 @@ function setActiveLink(link) {
   skillsLink.classList.remove("active");
   experienceLink.classList.remove("active");
   certLink.classList.remove("active");
-  contactLink.classList.remove("active");
 
   // Add "active" class to the specified link
   link.classList.add("active");
@@ -69,10 +65,8 @@ window.addEventListener("scroll", () => {
     setActiveLink(skillsLink);
   } else if (yOffset >= experienceSection.offsetTop && yOffset < certSection.offsetTop) {
     setActiveLink(experienceLink);
-  } else if (yOffset >= certSection.offsetTop && yOffset < contactSection.offsetTop) {
+  } else if (yOffset >= certSection.offsetTop) {
     setActiveLink(certLink);
-  } else if (yOffset >= contactSection.offsetTop) {
-    setActiveLink(contactLink);
   } else {
     // No section is in view
     deactivateLinks();
