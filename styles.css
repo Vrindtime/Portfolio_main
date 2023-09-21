@@ -71,10 +71,12 @@ a {
     box-shadow: 0 0 15px 10px var(--secondary),
         0 0 25px 20px var(--secondary);
 }
-.links{
+
+.links {
     padding: 0% 5%;
     align-items: center !important;
 }
+
 .links>.col-4>a:hover {
     box-shadow: 0 0 15px 10px var(--secondary),
         0 0 25px 20px var(--secondary);
@@ -137,6 +139,15 @@ a {
     .section {
         margin-top: 4vh !important;
         padding: 1% !important;
+    }
+
+    .scrollup {
+        right: 42% !important;
+        position: absolute;
+        bottom: -365% !important;
+    }
+    .mobilescroll{
+        display: block !important;
     }
 }
 
@@ -297,4 +308,14 @@ b {
 
 .text-card h5 ::after {
     content: "/>";
+}
+
+.scrollup {
+    right: 2%;
+    position: absolute;
+    bottom: -300%;
+}
+
+.mobilescroll{
+    display: none;
 }
