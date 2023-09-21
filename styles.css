@@ -142,12 +142,16 @@ a {
     }
 
     .scrollup {
-        right: 42% !important;
-        position: absolute;
-        bottom: -365% !important;
+        display: none;
     }
     .mobilescroll{
         display: block !important;
+    }
+    .text-card{
+        margin-bottom: 2vh !important;
+    }
+    .text-card p{
+        font-size: .8rem !important;
     }
 }
 
@@ -157,9 +161,9 @@ a {
         margin: 2rem;
         font-size: 1.6rem;
     }
-
-    .p {
-        font-size: larger;
+    
+    p {
+        font-size: 1.2rem;
     }
 
     .mybtn {
@@ -173,7 +177,9 @@ a {
     .links {
         margin-top: 5em !important;
     }
-
+    .sticky{
+        padding-top: 10vh;
+    }
 }
 
 .mainsection {
@@ -302,8 +308,9 @@ b {
 
 .text-card h5 {
     color: var(--maintext) !important;
-    font-weight: 400;
-    font-size: .9rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: start;
 }
 
 .text-card h5 ::after {
