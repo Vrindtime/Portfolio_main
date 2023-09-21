@@ -71,7 +71,10 @@ a {
     box-shadow: 0 0 15px 10px var(--secondary),
         0 0 25px 20px var(--secondary);
 }
-
+.links{
+    padding: 0% 5%;
+    align-items: center !important;
+}
 .links>.col-4>a:hover {
     box-shadow: 0 0 15px 10px var(--secondary),
         0 0 25px 20px var(--secondary);
@@ -108,9 +111,10 @@ a {
 }
 
 @media (max-width: 992px) {
-    .row{
+    .row {
         padding: 5% !important;
     }
+
     .intro {
         padding: 3% !important;
     }
@@ -134,7 +138,6 @@ a {
         margin-top: 4vh !important;
         padding: 1% !important;
     }
-    
 }
 
 
@@ -151,7 +154,8 @@ a {
     .mybtn {
         margin-top: 1em !important;
     }
-    .section p{
+
+    .section p {
         font-size: 1em !important;
     }
 
@@ -172,19 +176,19 @@ a {
     font-weight: 600;
 }
 
-.section p {
+.section .h3 {
     padding-left: 2vw;
     font-size: 0.8rem;
 }
 
-.section p::before {
+.section .h3::before {
     content: "<h3>";
     font-size: 14px;
     bottom: 100px;
     margin-left: -15px;
 }
 
-.section p::after {
+.section .h3::after {
     content: "</h3>";
     font-size: 14px;
     margin-left: -15px;
@@ -209,12 +213,13 @@ b {
     place-content: center;
 }
 
-.scroll{
+.scroll {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .scroll-down {
     height: 50px;
     width: 30px;
@@ -241,12 +246,12 @@ b {
 .scroll-down::before {
     top: 30%;
     animation-delay: 0.3s;
-    /* animation: scroll-down 1s ease-in-out infinite; */
+    animation: scroll-down 1s ease-in-out infinite;
 }
 
 @keyframes scroll-down {
     0% {
-        /* top:20%; */
+        top: 20%;
         opacity: 0;
     }
 
@@ -262,4 +267,34 @@ b {
         top: 90%;
         opacity: 0;
     }
-} 
+}
+
+
+.text-card {
+    background: rgba(25, 93, 233, 0.13);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(25, 93, 233, 0.75);
+
+    padding: 1% 2%;
+    margin: 1%;
+
+    box-shadow: var(--background) 0px 2px 8px;
+}
+
+.text-card p {
+    font-size: .7rem;
+    margin-bottom: .1rem;
+}
+
+.text-card h5 {
+    color: var(--maintext) !important;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.text-card h5 ::after {
+    content: "/>";
+}

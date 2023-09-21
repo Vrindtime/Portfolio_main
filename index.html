@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="cursor&scrollbar.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="/resource/logo.png">
 </head>
 
 <body>
@@ -26,19 +27,23 @@
 
         <div class="link d-none d-lg-block">
           <a id="about-link" class="active" href="#about">About</a>
-          <a id="skills-link" class="2" href="#skills">Skills</a>
+          <a id="skills-link" class="" href="#skills">Skills</a>
           <a id="experience-link" class="" href="#experience">Experience</a>
           <a id="cert-link" class="" href="#cert">Certificate & Honors</a>
-          <a id="contact-link" class="" href="#contact">Contact</a>
         </div>
 
         <div class="links row mb-5 justify-content-between">
-          <div class="col-4 mt-4 link-center "><a class="link_icon " href="https://www.linkedin.com/in/ashvins/"
+          <div class="col-3 mt-4 link-center "><a class="link_icon " href="https://www.linkedin.com/in/ashvins/"
               target="_blank" rel="noopener noreferrer"><img src="./resource/linkedin.svg"></a></div>
-          <div class="col-4 mt-4 link-center "><a class="link_icon" href="https://github.com/Vrindtime" target="_blank"
+
+          <div class="col-3 mt-4 link-center "><a class="link_icon" href="https://github.com/Vrindtime" target="_blank"
               rel="noopener noreferrer"><img src="./resource/github.svg"></a></div>
-          <div class="col-4 mt-4 link-center "><a class="link_icon" href="https://www.behance.net/vrindtime"
+
+          <div class="col-3 mt-4 link-center "><a class="link_icon" href="https://www.behance.net/vrindtime"
               target="_blank" rel="noopener noreferrer"><img src="./resource/behance.svg"></a></div>
+
+          <div class="col-3 mt-4 link-center "><a class="link_icon" href="mailto:ashvin.per@gmail.com?subject=Resume-Portfolio"
+              target="_blank" rel="noopener noreferrer"><img src="./resource/mail.png"></a></div>
         </div>
 
         <div class=" row text-center justify-content-center">
@@ -50,7 +55,7 @@
           <div id="about" class="section scroll h100 p-3 ">
             <div class="text">
               <h2>About Me</h2>
-              <p>
+              <p class="h3">
                 <br>
                 Welcome to my digital world! I'm Ashvin, a tech enthusiast with a background in <a class="text-link"
                   href="https://www.youtube.com/@vrindtime" target="_blank" rel="noopener noreferrer">content
@@ -84,7 +89,7 @@
           <div id="skills" class="section h100 ">
             <!-- Your Skills section content here -->
             <h2>Skills</h2>
-            <p>
+            <p class="h3">
               <br>
               My skills include proficiency in several programming languages, such as <b>Python</b>, <b>C</b>,
               <b>C++</b>, <b>Dart</b>, and <b>Java</b>, along with a strong grasp of data structures and algorithms.
@@ -108,13 +113,17 @@
               animations for various applications, adding a dynamic dimension to my technical capabilities.
               <br>
             </p>
-
+            <div class="scroll">
+              <a href="#experience">
+                <div class="scroll-down"></div>
+              </a>
+            </div>
 
           </div>
           <div id="experience" class="section h100 ">
             <!-- Your Experience section content here -->
             <h2>Experience</h2>
-            <p>
+            <p class="h3">
               <br>
               In the pursuit of my passion for computer science and technology, I'm currently undertaking a
               <b>Bachelor's
@@ -147,14 +156,56 @@
               piezoelectric shoe capable of storing kinetic energy for subsequent use in powering electric devices.
               <br>
             </p>
+            <div class="scroll">
+              <a href="#cert">
+                <div class="scroll-down"></div>
+              </a>
+            </div>
           </div>
-          <div id="cert" class="section h100 border ">
+          <div id="cert" class="section h100 ">
             <!-- Your Certificate & Honors section content here -->
-            achevment
-          </div>
-          <div id="contact" class="section h100 border">
-            <!-- Your Contact section content here -->
-            contact
+            <h2>Certificate &amp; Honors</h2>
+
+            <div class="text-card">
+              <h5>The Complete Web Development Bootcamp-Udemy</h5>
+              <p>
+                Currently completing a web development Bootcamp from udemy by Dr. Angela Yu where i am
+                learning HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps
+              </p>
+            </div>
+
+            <div class="text-card">
+              <h5>Technotica Amal Jyothi College of Engineering</h5>
+              <p>
+                Developed a mobile app called 'Dabus' using Flutter and Firebase to enhance
+                the user's travel experience by tracking bus timings.
+              </p>
+            </div>
+
+            <div class="text-card">
+              <h5>Webdesigning Bootcamp Kodacy</h5>
+              <p>
+                Learned About the the thoughtprocess and tools(netlify,bootstrap,GSAP) that go into desiging ,
+                creating and hosting a website
+              </p>
+            </div>
+
+            <div class="text-card">
+              <h5>Red Hat Mega Conclave </h5>
+              <p>
+                Virtual Mega Conclave on Career Advancement through Red Hat Technologies, hosted by ipsr solutions
+                limited in association with Red Hat and Red Hat Academy (RHA) Colleges
+              </p>
+            </div>
+
+            <div class="text-card">
+              <h5>KCG College School Connect Program</h5>
+              <p>
+                Designed a piezoelectric shoe capable of storing kinetic energy for subsequent
+                use in powering electric devices.
+              </p>
+            </div>
+            <br>
           </div>
         </div>
       </div>
