@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
     --text: #bec3d1;
     --maintext: #d4dcf5;
@@ -45,30 +46,6 @@ a {
     /* Prevents text from wrapping */
     animation: typing 3s steps(14), blink-caret 1s step-end infinite;
 }
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: var(--maintext);
-    }
-}
-
-
 
 
 .intro>h3 {
@@ -395,3 +372,25 @@ b {
       opacity: 1;
     }
   }
+
+  @keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--maintext);
+    }
+}
