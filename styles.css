@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --text: #bec3d1;
     --maintext: #d4dcf5;
@@ -21,7 +22,7 @@ body {
     background: -webkit-radial-gradient(circle, rgba(24, 34, 52, 1) 72%, rgba(11, 16, 24, 1) 100%) !important;
     background: radial-gradient(circle, rgba(24, 34, 52, 1) 72%, rgba(11, 16, 24, 1) 100%) !important;
 }
-  
+
 a {
     cursor: none;
     text-decoration: none !important;
@@ -64,7 +65,7 @@ a {
     position: sticky;
     top: 0;
     max-height: 100vh;
-    animation: fadeInMoveLeft 2s ease-in-out ;
+    animation: fadeInMoveLeft 2s ease-in-out;
 }
 
 .h100 {
@@ -268,6 +269,7 @@ b {
         top: 1px !important;
         position: relative !important;
         padding: 5% !important;
+        animation: fadeUp 2s ease-in-out !important;
     }
 
     .mybtn {
@@ -276,7 +278,7 @@ b {
 
     .mainsection {
         margin-top: 8vh !important;
-        animation: fadeIn 2s ease-in-out !important;
+        animation: fadeUp 2s ease-in-out !important;
     }
 
     .section {
@@ -299,7 +301,8 @@ b {
     .text-card p {
         font-size: .8rem !important;
     }
-    .typewriter{
+
+    .typewriter {
         overflow: auto;
         white-space: wrap;
     }
@@ -355,25 +358,40 @@ b {
 
 @keyframes fadeInMoveLeft {
     0% {
-      opacity: 0;
-      transform: translateX(-50px);
+        opacity: 0;
+        transform: translateX(-50px);
     }
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
 
-  @keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
-    100% {
-      opacity: 1;
-    }
-  }
 
-  @keyframes typing {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes typing {
     from {
         width: 0;
     }
