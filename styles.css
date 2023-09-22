@@ -19,9 +19,8 @@ body {
     background: -moz-radial-gradient(circle, rgba(24, 34, 52, 1) 72%, rgba(11, 16, 24, 1) 100%) !important;
     background: -webkit-radial-gradient(circle, rgba(24, 34, 52, 1) 72%, rgba(11, 16, 24, 1) 100%) !important;
     background: radial-gradient(circle, rgba(24, 34, 52, 1) 72%, rgba(11, 16, 24, 1) 100%) !important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#182234", endColorstr="#0b1018", GradientType=1);
 }
-
+  
 a {
     cursor: none;
     text-decoration: none !important;
@@ -32,31 +31,43 @@ a {
     font-size: 3em;
     font-weight: 800;
     color: var(--maintext);
-    
-}
-.intro .typewriter { 
-    display: inline;
-    width: 100%;
-    border-right: 4px solid var(--text); /* Create a blinking cursor effect */
-    animation: typing 2s steps(15), blink-caret 1s step-end infinite;
+
 }
 
-/* Typing effect */
+.typewriter {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Ensures the text is hidden initially */
+    border-right: 4px solid var(--maintext);
+    /* Simulates the typing cursor */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    animation: typing 3s steps(14), blink-caret 1s step-end infinite;
+}
+
 @keyframes typing {
     from {
-        width: 0%;
+        width: 0;
     }
+
     to {
         width: 100%;
     }
 }
 
-/* Blinking cursor effect */
 @keyframes blink-caret {
-    50% {
+
+    from,
+    to {
         border-color: transparent;
     }
+
+    50% {
+        border-color: var(--maintext);
+    }
 }
+
 
 
 
@@ -76,6 +87,7 @@ a {
     position: sticky;
     top: 0;
     max-height: 100vh;
+    animation: fadeInMoveLeft 2s ease-in-out ;
 }
 
 .h100 {
@@ -138,80 +150,11 @@ a {
 
 }
 
-@media (max-width: 992px) {
-    .row {
-        padding: 5% !important;
-    }
-
-    .intro {
-        padding: 3% !important;
-    }
-
-    .sticky {
-        max-height: 50vh !important;
-        top: 1px !important;
-        position: relative !important;
-        padding: 5% !important;
-    }
-
-    .mybtn {
-        margin-bottom: 5% !important;
-    }
-
-    .mainsection {
-        margin-top: 8vh !important;
-    }
-
-    .section {
-        margin-top: 4vh !important;
-        padding: 1% !important;
-    }
-
-    .scrollup {
-        display: none;
-    }
-    .mobilescroll{
-        display: block !important;
-    }
-    .text-card{
-        margin-bottom: 2vh !important;
-    }
-    .text-card p{
-        font-size: .8rem !important;
-    }
-}
-
-
-@media (min-width: 1200px) and (min-height: 768px) {
-    .link a {
-        margin: 2rem;
-        font-size: 1.6rem;
-    }
-    
-    p {
-        font-size: 1.2rem;
-    }
-
-    .mybtn {
-        margin-top: 1em !important;
-    }
-
-    .section p {
-        font-size: 1em !important;
-    }
-
-    .links {
-        margin-top: 5em !important;
-    }
-    .sticky{
-        padding-top: 10vh;
-    }
-}
-
 .mainsection {
     text-align: justify;
     /* border: 1px solid red; */
     padding-top: 2rem;
+    animation: fadeIn 4s ease-in-out !important;
 }
 
 .section h2 {
@@ -292,26 +235,6 @@ b {
     animation: scroll-down 1s ease-in-out infinite;
 }
 
-@keyframes scroll-down {
-    0% {
-        top: 20%;
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 1;
-    }
-
-    60% {
-        opacity: 1;
-    }
-
-    100% {
-        top: 90%;
-        opacity: 0;
-    }
-}
-
 
 .text-card {
     background: rgba(25, 93, 233, 0.13);
@@ -349,6 +272,126 @@ b {
     bottom: -300%;
 }
 
-.mobilescroll{
+.mobilescroll {
     display: none;
 }
+
+
+@media (max-width: 992px) {
+    .row {
+        padding: 5% !important;
+    }
+
+    .intro {
+        padding: 3% !important;
+    }
+
+    .sticky {
+        max-height: 50vh !important;
+        top: 1px !important;
+        position: relative !important;
+        padding: 5% !important;
+    }
+
+    .mybtn {
+        margin-bottom: 5% !important;
+    }
+
+    .mainsection {
+        margin-top: 8vh !important;
+        animation: fadeIn 2s ease-in-out !important;
+    }
+
+    .section {
+        margin-top: 4vh !important;
+        padding: 1% !important;
+    }
+
+    .scrollup {
+        display: none;
+    }
+
+    .mobilescroll {
+        display: block !important;
+    }
+
+    .text-card {
+        margin-bottom: 2vh !important;
+    }
+
+    .text-card p {
+        font-size: .8rem !important;
+    }
+    .typewriter{
+        overflow: auto;
+        white-space: wrap;
+    }
+}
+
+
+@media (min-width: 1200px) and (min-height: 768px) {
+    .link a {
+        margin: 2rem;
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .mybtn {
+        margin-top: 1em !important;
+    }
+
+    .section p {
+        font-size: 1em !important;
+    }
+
+    .links {
+        margin-top: 5em !important;
+    }
+
+    .sticky {
+        padding-top: 10vh;
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        top: 20%;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInMoveLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

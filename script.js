@@ -75,3 +75,10 @@ window.addEventListener("scroll", () => {
 
 // Call setActiveLink initially to set the active link on page load
 setActiveLink(aboutLink); // This will make About Me the default active menu when the page loads
+
+
+//typing animation
+window.addEventListener('DOMContentLoaded', (event) => {
+  const typewriter = document.querySelector('.typewriter');
+  typewriter.style.animationPlayState = 'running';
+});
