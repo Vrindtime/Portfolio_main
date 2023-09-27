@@ -170,9 +170,8 @@ a {
 }
 .text-link::after{
     content: "↗";
-    font-size: .6rem;
+    font-size: .8rem;
     color: var(--primary);
-    margin-bottom: -15px;
 }
 .text-link:hover {
     color: var(--primary) !important;
