@@ -398,25 +398,24 @@ b {
 }
 
 
-@keyframes typing {
-    from {
-        width: 0;
-        opacity: 1;
-    }
-
-    to {
-        width: 100%;
-        opacity: 1;
-    }
-}
-
 @keyframes blink-caret {
-
-    0%,50%,100% {
-        border-color: transparent;
+    0%, 50%, 100% {
+      border-color: transparent;
     }
-
-    25%,75% {
-        border-color: var(--primary);
+  
+    25%, 75% {
+      border-color: var(--primary);
     }
-}
+  }
+  
+  @keyframes typing {
+    0%{
+      width: 0;
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
