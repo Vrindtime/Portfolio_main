@@ -36,6 +36,10 @@ a {
 
 }
 
+.typewriter-wrapper {
+    display: inline-block; /* This wrapper ensures the width fits the content */
+  }
+  
 .typewriter {
     display: inline-block;
     margin: 0 auto;
