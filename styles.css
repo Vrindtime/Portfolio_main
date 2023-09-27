@@ -41,11 +41,13 @@ a {
     margin: 0 auto;
     overflow: hidden;
     /* Ensures the text is hidden initially */
-    border-right: 4px solid var(--maintext);
+    border-right: 4px solid transparent;
     /* Simulates the typing cursor */
     white-space: nowrap;
     /* Prevents text from wrapping */
-    animation: typing 3s steps(14), blink-caret 1s step-end infinite;
+    opacity: 0;
+    animation: typing 3s steps(15) forwards, blink-caret 3s steps(15) forwards;
+    animation-delay: 1.6s; 
 }
 
 
@@ -162,7 +164,12 @@ a {
     color: white !important;
     font-weight: 800;
 }
-
+.text-link::after{
+    content: "↗";
+    font-size: .6rem;
+    color: var(--primary);
+    margin-bottom: -15px;
+}
 .text-link:hover {
     color: var(--primary) !important;
 }
@@ -394,21 +401,22 @@ b {
 @keyframes typing {
     from {
         width: 0;
+        opacity: 1;
     }
 
     to {
         width: 100%;
+        opacity: 1;
     }
 }
 
 @keyframes blink-caret {
 
-    from,
-    to {
+    0%,50%,100% {
         border-color: transparent;
     }
 
-    50% {
-        border-color: var(--maintext);
+    25%,75% {
+        border-color: var(--primary);
     }
 }
