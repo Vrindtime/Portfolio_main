@@ -50,8 +50,8 @@ a {
     white-space: nowrap;
     /* Prevents text from wrapping */
     opacity: 0;
-    animation: typing 3s steps(15) forwards, blink-caret 3s steps(15) forwards;
-    animation-delay: 1.6s; 
+    animation: typing 1.8s steps(15) forwards, blink-caret 2s steps(15) forwards;
+    animation-delay: .5s; 
 }
 
 
@@ -71,7 +71,7 @@ a {
     position: sticky;
     top: 0;
     max-height: 100vh;
-    animation: fadeInMoveLeft 2s ease-in-out;
+    animation: fadeInMoveLeft 1s ease-in-out;
 }
 
 .h100 {
@@ -138,7 +138,7 @@ a {
     text-align: justify;
     /* border: 1px solid red; */
     padding-top: 2rem;
-    animation: fadeIn 4s ease-in-out !important;
+    animation: fadeIn 1s ease-in-out !important;
 }
 
 .section h2 {
@@ -279,7 +279,7 @@ b {
         top: 1px !important;
         position: relative !important;
         padding: 5% !important;
-        animation: fadeUp 2s ease-in-out !important;
+        animation: fadeUp 1s ease-in-out !important;
     }
 
     .mybtn {
@@ -288,7 +288,7 @@ b {
 
     .mainsection {
         margin-top: 8vh !important;
-        animation: fadeUp 2s ease-in-out !important;
+        animation: fadeUp 1s ease-in-out !important;
     }
 
     .section {
