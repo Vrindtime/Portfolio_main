@@ -7,11 +7,13 @@
     --primary: #195DE9;
     --secondary: #182234;
     --accent: #6f92da;
+    scroll-behavior: smooth !important;
 }
 
 * {
     font-family: Inter, sans-serif;
     color: var(--text);
+    
 }
 
 body {
