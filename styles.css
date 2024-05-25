@@ -154,14 +154,14 @@ a {
 }
 
 .section .h3::before {
-    content: "<h3>";
+    content: "<start>";
     font-size: 14px;
     bottom: 100px;
     margin-left: -15px;
 }
 
 .section .h3::after {
-    content: "</h3>";
+    content: "</end>";
     font-size: 14px;
     margin-left: -15px;
 }
@@ -340,11 +340,11 @@ b {
     }
 
     .links {
-        margin-top: 5em !important;
+        margin-top: 2em !important;
     }
 
     .sticky {
-        padding-top: 10vh;
+        padding-top: 4vh;
     }
 }
 
