@@ -267,6 +267,50 @@ b {
 }
 
 
+  /* Glassmorphism style */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .arrow-button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+  }
+
+  .arrow-button:hover {
+    color: #0056b3;
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+  }
+
+  .arrow-button:hover .arrow-icon {
+    transform: translateX(5px);
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .card-desc {
+    font-size: 1rem;
+    color: #ddd;
+  }
+
 @media (max-width: 992px) {
     .row {
         padding: 5% !important;
@@ -344,7 +388,10 @@ b {
     }
 
     .sticky {
-        padding-top: 4vh;
+        padding-top: 15vh;
+    }
+    .glass-card {
+        width: 130%;
     }
 }
 
