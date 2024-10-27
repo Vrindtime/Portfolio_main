@@ -326,6 +326,7 @@ b {
         position: relative !important;
         padding: 5% !important;
         animation: fadeUp 1s ease-in-out !important;
+        margin-bottom: 75%;
     }
 
     .mybtn {
